@@ -1,0 +1,122 @@
+@import "../../responsive.scss";
+
+.chat {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #dce8fd;
+    .messages {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        overflow-y: scroll;
+        @include hide-scrollbar;
+
+        h1 {
+            font-weight: 300;
+        }
+
+        .message {
+            background-color: #fff;
+            padding: 25px;
+            margin: 20px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            cursor: pointer;
+
+            span {
+                font-weight: bold;
+            }
+
+            img {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .chatBox {
+        flex: 1;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .top{
+            background-color:#7110d9;
+            padding: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+               
+            }
+            .close{
+                cursor: pointer;
+            }
+        }
+
+        .center{
+            height: 300px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            overflow: scroll;
+        @include hide-scrollbar;
+
+            .chatMessage{
+                width: 50%;
+
+                &.own{
+                    align-self: flex-end;
+                    text-align: right;
+                }
+
+                span{
+                    font-size: 12px;
+                    background-color: #dce8fd;
+                }
+            }
+
+        }
+
+        .bottom{
+            border-top: 2px solid #7110d9;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            textarea{
+                flex:3;
+                height: 100%;
+                // outline: none;
+                border: none;
+
+            }
+            button{
+                flex: 1;
+                background-color: #7110d9;
+                height: 100%;
+                border: none;
+                cursor: pointer;
+
+            }
+        }
+    }
+}

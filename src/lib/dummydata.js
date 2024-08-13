@@ -95,5 +95,19 @@ export const listData = [
     address: "303 Bavdhan, Pune, India",
     latitude: 18.5074,
     longitude: 73.7722
-  }
+  },
+  {
+    id: 7,
+    title: "Modern Family Home",
+    img: "https://images.pexels.com/photos/259950/pexels-photo-259950.jpeg",
+    bedroom: 4,
+    bathroom: 3,
+    price: 500000,
+    address: "123 MG Road, Pune, India",
+    latitude: 18.5204,
+    longitude: 73.8567
+  },
+
+
+
 ];

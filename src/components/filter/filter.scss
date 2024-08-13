@@ -1,19 +1,24 @@
-.filter{
+.filter {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    h1{
+
+    h1 {
         font-size: 24px;
         font-weight: 300;
     }
-    .item{
+
+    .item {
         display: flex;
         flex-direction: column;
         gap: 3px;
-        label{
+
+        label {
             font-size: 11px;
         }
-        input,select{
+
+        input,
+        select {
             width: 100px;
             padding: 10px;
             border: 1px solid #e0e0e0;
@@ -21,28 +26,32 @@
             font-size: 14px;
         }
     }
-    .top{
-        .item{
-            input{
-            width: 100%;
-       
 
-            }            
+    .top {
+        .item {
+            input {
+                width: 100%;
+
+
+            }
         }
     }
-    .bottom{
+
+    .bottom {
         display: flex;
         justify-content: space-between;
         gap: 20px;
-        button{
+
+        button {
             width: 100px;
             padding: 10px;
             border: none;
             cursor: pointer;
-            background-color: #7110d9 ;
-            img{
+            background-color: #7110d9;
+
+            img {
                 width: 20px;
             }
         }
     }
-}   
+}

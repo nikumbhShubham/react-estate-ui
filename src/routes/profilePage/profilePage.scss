@@ -1,0 +1,118 @@
+@import "../../responsive.scss";
+
+.profilePage {
+    display: flex;
+    height: 100%;
+    .userInfo {
+        flex: 3;
+        height: 100%;
+
+        // background:red;
+        .heading {
+            padding: 12px;
+            display: flex;
+            justify-content: space-between;
+
+            span {
+                font-size: 28px;
+                font-weight: 300;
+            }
+
+            button {
+                outline: none;
+                padding: 8px;
+                border: none;
+                color: #fff;
+                background: #7110d9;
+                ;
+
+            }
+        }
+
+        .userData {
+            display: flex;
+            flex-direction: column;
+            align-items: self-start;
+            margin: 12px;
+            padding: 16px;
+
+            // background: blue;
+            .avatar {
+                display: flex;
+                align-items: center;
+                margin-bottom: 6px;
+                gap: 16px;
+
+                span {
+                    font-weight: 600;
+                }
+
+                img {
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 20px;
+                }
+            }
+
+            .username {
+                margin-bottom: 8px;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                .title {
+                    font-weight: 600;
+                }
+            }
+
+            .email {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                .title {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .list {
+            .lTitle {
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+
+                span {
+                    font-size: 28px;
+                    font-weight: 300;
+                }
+
+                button {
+                    outline: none;
+                    padding: 8px;
+                    border: none;
+                    color: #fff;
+                    background: #7110d9;
+                    ;
+
+                }
+            }
+
+            .wrapper {
+                height: 100vh;
+                // padding: 0 50px 0 0;
+                padding-bottom: 50%;
+                flex-direction: column;
+                overflow-y: scroll;
+                @include hide-scrollbar;
+            }
+        }
+
+
+    }
+
+    .messages {
+        flex: 2;
+        height: 100%;
+    }
+}

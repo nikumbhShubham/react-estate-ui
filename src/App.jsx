@@ -5,12 +5,14 @@ import Singlepage from "./routes/Singlepage/Singlepage"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Listpage from "./routes/listpage/Listpage"
 import Layout from "./layout/Layout"
+import Login from "./routes/login/Login"
+import ProfilePage from "./routes/profilePage/ProfilePage"
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Layout />,
-      children:[
+      children: [
         {
           path: "/",
           element: <Homepage />
@@ -21,11 +23,21 @@ function App() {
         },
         {
           path: "/:id",
-          element: <Singlepage/>
+          element: <Singlepage />
+        }, {
+          path: "/profile",
+          element: <ProfilePage />
         }
+
       ]
     },
-   
+
+    {
+      path: "/login",
+      element: <Login />
+    }
+
+
 
   ])
 
@@ -39,7 +51,7 @@ function App() {
     //   </div>
     // </div>
 
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
 
 
 
